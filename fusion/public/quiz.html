@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech AI Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>⚡ Tech AI Quiz</h1>
+
+    <div class="selector" id="start-screen">
+      <label for="category">Choose a Category</label>
+      <select id="category">
+        <option value="JavaScript">JavaScript</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="React">React</option>
+        <option value="Computer Networks">Computer Networks</option>
+      </select>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <h2 id="question"></h2>
+      <ul id="options"></ul>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <h2>Quiz Complete 🎉</h2>
+      <p id="score-text"></p>
+      <button onclick="window.location.reload()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
